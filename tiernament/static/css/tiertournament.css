@@ -1,0 +1,19 @@
+.tiertitle {
+	padding: 30px 0px 30px 0px;
+}
+
+.fighterimg {
+	/* Default: width: 120px,  height: 100px */
+	width: 96px;
+	height: 80px;
+}
+
+.formitem {
+	padding: 5px 0px 5px 0px;
+}
+
+.player-entry {
+	display: inline-block;
+	padding: 5px 5px 5px 5px;
+}
+

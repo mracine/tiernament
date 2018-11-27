@@ -1,0 +1,2 @@
+from .tiernament import app
+
