@@ -31,6 +31,12 @@
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/05.png"
 	    },
 	    {
+		    "fighter": "Chrom",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
 		    "fighter": "Cloud",
 		    "rank": 2,
 		    "tier_group": "S",
@@ -43,10 +49,22 @@
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/07.png"
 	    },
 	    {
+		    "fighter": "Daisy",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
 		    "fighter": "Dark Pit",
 		    "rank": 30,
 		    "tier_group": "C",
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/08.png"
+	    },
+	    {
+		    "fighter": "Dark Samus",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
 	    },
 	    {
 		    "fighter": "Diddy Kong",
@@ -97,10 +115,34 @@
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/16.png"
 	    },
 	    {
+		    "fighter": "Ice Climbers",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
 		    "fighter": "Ike",
 		    "rank": 34,
 		    "tier_group": "D",
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/17.png"
+	    },
+	    {
+		    "fighter": "Inkling",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
+		    "fighter": "Isabelle",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
+		    "fighter": "Incineroar",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
 	    },
 	    {
 		    "fighter": "Jigglypuff",
@@ -109,10 +151,22 @@
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/18.png"
 	    },
 	    {
+		    "fighter": "Ken",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
 		    "fighter": "King Dedede",
 		    "rank": 51,
 		    "tier_group": "F",
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/19.png"
+	    },
+	    {
+		    "fighter": "King K. Rool",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
 	    },
 	    {
 		    "fighter": "Kirby",
@@ -241,16 +295,40 @@
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/40.png"
 	    },
 	    {
+		    "fighter": "Pichu",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
 		    "fighter": "Pikachu",
 		    "rank": 14,
 		    "tier_group": "B",
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/41.png"
 	    },
 	    {
+		    "fighter": "Piranha Plant",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
 		    "fighter": "Pit",
 		    "rank": 29,
 		    "tier_group": "C",
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/42.png"
+	    },
+	    {
+		    "fighter": "Richter",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
+		    "fighter": "Ridley",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
 	    },
 	    {
 		    "fighter": "Robin",
@@ -301,6 +379,18 @@
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/50.png"
 	    },
 	    {
+		    "fighter": "Simon",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
+		    "fighter": "Snake",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
 		    "fighter": "Sonic",
 		    "rank": 4,
 		    "tier_group": "A",
@@ -331,10 +421,22 @@
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/55.png"
 	    },
 	    {
+		    "fighter": "Wolf",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
+	    },
+	    {
 		    "fighter": "Yoshi",
 		    "rank": 28,
 		    "tier_group": "C",
 		    "img_url": "https://smashboards.com/data/tiers/wiiu/white/56.png"
+	    },
+	    {
+		    "fighter": "Young Link",
+		    "rank": -1,
+		    "tier_group": "",
+		    "img_url": ""
 	    },
 	    {
 		    "fighter": "Zelda",

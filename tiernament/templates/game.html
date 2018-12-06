@@ -24,11 +24,7 @@
 							{{ game_name }} Tier Tournament
 						{% endif %}
 					</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 col-lg-10 offset-md-1 offset-lg-1">
-					<p>Start: {{ game_time }}</p>
+					<p align="center">Start: {{ game_time }}</p>
 				</div>
 			</div>
 			<div class="row">
@@ -41,15 +37,22 @@
 			</div>
 			<div class="row">
 				<div class="col-md-10 col-lg-10 offset-md-1 offset-lg-1">
-					<div>
-					{% for i in range(1,58) %}
-						{% if i < 10 %}
-							<img class="fighterimg" src="https://smashboards.com/data/tiers/wiiu/white/0{{ i }}.png">
-						{% else %}
-							<img class="fighterimg" src="https://smashboards.com/data/tiers/wiiu/white/{{ i }}.png">
-						{% endif %}
-					{% endfor %}
-					</div>
+					{% if tier %}
+						{% set tier_group = namespace(current_group=tier[0]['tier_group']) %}
+						<div class="tier_group">{{ tier_group.current_group }}</div>
+						{% for fighter in tier %}
+							{% if fighter['tier_group'] != tier_group.current_group %}
+								{% set tier_group.current_group = fighter['tier_group'] %}
+								<br><div class="tier_group">{{ tier_group.current_group }}</div>
+							{% endif %}
+							<div class="fighter">
+							{% if fighter['rank'] >= 0 %}
+								<img class="fighterimg" src="{{ fighter['img_url'] }}">
+								<p>{{ fighter['fighter'] }}</p>
+							{% endif %}
+							</div>
+						{% endfor %}
+					{% endif %}
 				</div>
 			</div>
 

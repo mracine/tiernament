@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS game;
 DROP TABLE IF EXISTS round;
 DROP TABLE IF EXISTS player;
+DROP TABLE IF EXISTS tier;
 
 CREATE TABLE game (
   uuid TEXT PRIMARY KEY UNIQUE NOT NULL,
@@ -27,3 +28,11 @@ CREATE TABLE player (
   color TEXT
 );
 
+CREATE TABLE tier (
+  uuid TEXT PRIMARY KEY UNIQUE NOT NULL,
+  game TEXT,
+  fighter TEXT,
+  rank INTEGER,
+  tier_group TEXT,
+  img_url TEXT
+);
