@@ -1,6 +1,19 @@
 import time, uuid
 from .round import Round
 
+def rowToGame(row):
+    # TODO: Serialize a given database Row to a Game object
+    uuid = None
+    name = None
+    time = 0
+    game = None
+    tier = None
+    players = []
+    rounds = 0
+    params = []
+
+    return -1
+
 class Game:
     uuid = None
     name = None # custom name for the game
@@ -8,7 +21,7 @@ class Game:
     game = None # name for the game being played
     tier = None # the actual tier we will use
     players = []
-    rounds = []
+    rounds = 0
     params = []
 
     def __init__(self, name, game, tier, players, params=None):
@@ -19,8 +32,8 @@ class Game:
         self.game = game
         self.tier = None
         self.players = []
+        self.rounds = 0 # TODO: might want to change later, but just init all games to 0
         # TODO: maybe a deleted player list? (someone left the game)
-        self.rounds = []
         self.params = params
 
     def startGame(self):
@@ -44,7 +57,8 @@ class Game:
     # Deletes the most recent round played, in case of accidental entries
     def undoRound(self):
         # TODO: also delete round from db
-        self.rounds.pop()
+        #self.rounds.pop()
+        return -1
 
     def getUUID(self):
         return self.uuid
@@ -60,4 +74,7 @@ class Game:
 
     def getTier(self):
         return self.tier
+
+    def getNumRounds(self):
+        return self.rounds
 

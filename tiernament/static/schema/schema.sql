@@ -4,32 +4,31 @@ DROP TABLE IF EXISTS player;
 DROP TABLE IF EXISTS tier;
 
 CREATE TABLE game (
-  uuid TEXT PRIMARY KEY UNIQUE NOT NULL,
+  id TEXT PRIMARY KEY UNIQUE NOT NULL,
   name TEXT,
   time INTEGER,
   game TEXT,
   tier BLOB,
   players BLOB,
-  rounds BLOB,
+  rounds INTEGER,
   params BLOB
 );
 
 CREATE TABLE round (
-  uuid TEXT PRIMARY KEY UNIQUE NOT NULL,
-  gameid TEXT NOT NULL,
-  number INTEGER,
+  id TEXT PRIMARY KEY UNIQUE NOT NULL,
+  game_id TEXT NOT NULL,
+  round_num INTEGER,
   placements BLOB
 );
 
 CREATE TABLE player (
-  uuid TEXT PRIMARY KEY UNIQUE NOT NULL,
-  name TEXT,
+  name TEXT PRIMARY KEY UNIQUE NOT NULL,
   icon BLOB,
   color TEXT
 );
 
 CREATE TABLE tier (
-  uuid TEXT PRIMARY KEY UNIQUE NOT NULL,
+  id TEXT PRIMARY KEY UNIQUE NOT NULL,
   game TEXT,
   fighter TEXT,
   rank INTEGER,

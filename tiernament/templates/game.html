@@ -24,7 +24,8 @@
 							{{ game_name }} Tier Tournament
 						{% endif %}
 					</h1>
-					<p align="center">Start: {{ game_time }}</p>
+					<div class="game_header">Round {{ current_round }}</div>
+					<div class="game_header">Start: {{ game_time }}</div>
 				</div>
 			</div>
 			<div class="row">
@@ -37,38 +38,37 @@
 			</div>
 			<div class="row">
 				<div class="col-md-10 col-lg-10 offset-md-1 offset-lg-1">
-					{% if tier %}
-						{% set tier_group = namespace(current_group=tier[0]['tier_group']) %}
-						<div class="tier_group">{{ tier_group.current_group }}</div>
-						{% for fighter in tier %}
-							{% if fighter['tier_group'] != tier_group.current_group %}
-								{% set tier_group.current_group = fighter['tier_group'] %}
-								<br><div class="tier_group">{{ tier_group.current_group }}</div>
-							{% endif %}
-							<div class="fighter">
-							{% if fighter['rank'] >= 0 %}
-								<img class="fighterimg" src="{{ fighter['img_url'] }}">
-								<p>{{ fighter['fighter'] }}</p>
-							{% endif %}
-							</div>
+					{% set tier_group = namespace(current_group=tier[0]['tier_group']) %}
+					<div class="tier_group">{{ tier_group.current_group }}</div>
+					{% for fighter in tier %}
+						{% if fighter['tier_group'] != tier_group.current_group %}
+							{% set tier_group.current_group = fighter['tier_group'] %}
+							<br><div class="tier_group">{{ tier_group.current_group }}</div>
+						{% endif %}
+						<div class="fighter" id="fighter_{{ fighter['rank'] }}">
+						{% if fighter['rank'] >= 0 %}
+							<!-- TODO: Add player indicator here -->
+							<img class="fighterimg" src="{{ fighter['img_url'] }}">
+						{% endif %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-lg-4 offset-md-4 offset-lg-4">
+					<div "game_header">Results</div>
+					<form method="post" style="margin: 0 auto;">
+						<!-- TODO: Form validation, reconsider entering of placements(like text input with nums) -->
+						{% for p in players %}
+							{{ p }}
+							<input type="text" name="{{ p }}_placement">
+							<br>
 						{% endfor %}
-					{% endif %}
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-10 col-lg-10 offset-md-1 offset-lg-1">
-					<h2>Round results</h2>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-10 col-lg-10 offset-md-1 offset-lg-1">
-					<div>
-						<!-- We need to get or enter the players here -->
-						<!-- TODO: Make this prettier -->
-						<a href="#"><img style="width: 50px; height: 50px;" src="{{ url_for('static', filename='images/plus_sign_temp.png') }}"></a>
-					</div>
+						<div class="formitem">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
 				</div>
 			</div>
 

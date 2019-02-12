@@ -1,21 +1,25 @@
 .tiertitle {
-	padding: 30px 0px 15px 0px;
+	padding: 20px 0px 15px 0px;
+}
+
+.game_header {
+	text-align: center;
 }
 
 .tier_group {
 	display: inline-block;
-	padding: 5px 5px 5px 5px;
+	padding: 5px 0px 5px 0px;
 }
 
 .fighter {
 	display: inline-block;
-	padding: 3px 3px 3px 3px;
+	padding: 2px 4px 2px 4px;
 }
 
 .fighterimg {
 	/* Default: width: 120px,  height: 100px */
-	width: 96px;
-	height: 80px;
+	width: 72px;
+	height: 60px;
 }
 
 .formitem {

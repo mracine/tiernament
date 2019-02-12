@@ -1,13 +1,11 @@
 import uuid
 
 class Player:
-    uuid = None
     name = None
     icon = None
     color = None
 
     def __init__(self, name, icon=None, color=None):
-        self.uuid = str(uuid.uuid4())
         self.name = name
         self.icon = icon
         self.color = color

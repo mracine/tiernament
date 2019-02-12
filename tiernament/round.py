@@ -4,7 +4,7 @@ class Round:
     uuid = None
     gameid = None # uuid of the game this belongs to
     number = -1 # the number round this one was during the game
-    placements = [] # array of player placements, ordered from first to last
+    placements = {} # json of player placements, where each entry is a playername and position in the tier
 
     def __init__(self, gameid, number, placements):
         self.uuid = str(uuid.uuid4())
